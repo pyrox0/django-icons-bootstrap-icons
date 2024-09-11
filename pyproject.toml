@@ -35,6 +35,11 @@ Repository = "https://github.com/pyrox0/django-icons-bootstrap-icons"
 Issues = "https://github.com/pyrox0/django-icons-bootstrap-icons/issues"
 Changelog = "https://github.com/pyrox0/django-icons-bootstrap-icons/releases"
 
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+exclude = ["manage.py"]
+
 [tool.uv]
 dev-dependencies = ["django>=5.1.1", "pytest-django>=4.9.0", "pytest>=8"]
 
