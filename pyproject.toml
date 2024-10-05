@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "django-icons-bootstrap-icons"
-version = "1.0.0"
+version = "1.0.1"
 authors = [{ name = "Pyrox/dish", email = "pyrox@pyrox.dev" }]
 maintainers = [{ name = "Pyrox/dish", email = "pyrox@pyrox.dev" }]
 description = "Bootstrap Icons renderer for django-icons"
@@ -41,7 +41,12 @@ venv = ".venv"
 exclude = ["manage.py"]
 
 [tool.uv]
-dev-dependencies = ["django>=5.1.1", "pytest-django>=4.9.0", "pytest>=8"]
+dev-dependencies = [
+  "coverage>=7.6.1",
+  "django>=5.1.1",
+  "pytest-django>=4.9.0",
+  "pytest>=8",
+]
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "tests.settings"

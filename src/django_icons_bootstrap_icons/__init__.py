@@ -1,5 +1,6 @@
 from django_icons.renderers.icon import IconRenderer
 
+
 class BootstrapIconRenderer(IconRenderer):
     """Render a Bootstrap Icons icon."""
 
@@ -9,10 +10,8 @@ class BootstrapIconRenderer(IconRenderer):
     def get_attrs(self):  # noqa
         attrs = super().get_attrs()
 
-        for key,value in self.kwargs.items():
-            if key == "renderer":
-                continue
-            elif key == "tag":
+        for key, value in self.kwargs.items():
+            if key == "renderer" or key == "tag":
                 continue
 
             key = key.replace("_", "-")

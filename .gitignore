@@ -2,3 +2,4 @@ __pycache__
 .direnv
 .pre-commit-config.yaml
 dist
+.coverage
